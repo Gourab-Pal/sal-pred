@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model deployment</title>
+</head>
+<body>
+    <h1>Salary prediction</h1>
+    <p>
+        Enter your years of experience below
+    </p>
+    <form action="/" method="POST">
+        <input type="number" name="years_of_experience" placeholder="Enter your experience">
+        <input type="submit">
+    </form>
+   {% if my_sal is not none %}
+    <h2> Predicted Salary: {{ my_sal }}</h2>
+    {% endif %}
+</body>
+</html>
